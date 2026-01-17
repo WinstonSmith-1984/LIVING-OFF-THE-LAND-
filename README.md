@@ -72,10 +72,6 @@ sudo ~/enp1s0_env/bin/streamlit run ~/network_guardian.py
 
 Once started, the terminal will display your access URLs:
 
-    Local URL: http://localhost:8501
-
-    Network URL: http://[Your-IP]:8501
-
 
 " You can now view your Streamlit app in your browser" e.g. :
 
