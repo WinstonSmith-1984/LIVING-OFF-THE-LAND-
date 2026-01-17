@@ -20,6 +20,18 @@ A real-time network security monitoring dashboard built with Python, Streamlit, 
 
     Alerting System: Features a "Threat Log" and high-risk browser notifications (toasts).
 
+### 🔍 Detection Logic Summary
+
+| Feature | Detection Method | Logic / Threshold | Potential Threat |
+| :--- | :--- | :--- | :--- |
+| **Connection Termination** | **TCP Reset (`RST`)** | `tcp.flags.reset == 1` | Port Scanning, Hijacking, or Server Instability. |
+| **Volumetric Analysis** | **PPS Tracking** | Calculates Packets Per Second | DoS/DDoS attacks or high-frequency probing. |
+| **Geographic Risks** | **IP Geolocation** | Filters private ranges; maps external IPs | Unauthorized access from unexpected regions. |
+| **Protocol Filtering** | **Specific Capture** | `TCP RST`, `DNS`, and `IGMP` | DNS Tunneling or network reconnaissance. |
+| **Risk Scoring** | **Weighted Alerts** | Adds **20pts** to score per event | Cumulative indicator of an active attack. |
+
+    
+
 🛠️ Prerequisites (Linux)
 
 : To run this program, ensure you have the required libraries: pip install streamlit pyshark plotly pandas requests
