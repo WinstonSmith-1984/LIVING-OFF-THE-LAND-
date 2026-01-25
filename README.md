@@ -38,6 +38,7 @@ pip install streamlit pyshark pandas plotly
 streamlit run lotl_lan.py
 
 
-<a href="mailto:derekconlon&#64;hotmail&#46;co&#46;uk">📫</a>
+
+📫 <a href="mailto:derekconlon&#64;hotmail&#46;co&#46;uk">Email me</a>
 
 
